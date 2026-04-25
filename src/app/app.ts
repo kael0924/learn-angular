@@ -5,8 +5,17 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('learn-angular');
+  protected readonly appTitle = signal('My Recipe Box');
+
+  protected loadSpaghetti() {
+    console.log('Loading Spaghetti...');
+  }
+
+  protected loadSalad() {
+    console.log('Loading Salad...');
+  }
 }
